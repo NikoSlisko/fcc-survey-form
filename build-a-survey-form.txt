@@ -1,0 +1,68 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Survey Form</title>
+</head>
+
+<body>
+
+  <h1 id="title">Gaming Setup & Habits Survey</h1>
+  <p id="description">Hey gamer! Share your setup and playstyle — your answers help show what the community is rocking in 2026.</p>
+
+  <form id="survey-form">
+
+    <label id="name-label" for="name">Name</label>
+    <input id="name" type="text" required placeholder="John Doe"><br><br>
+
+    <label id="email-label" for="email">Email</label>
+    <input id="email" type="email" required placeholder="john@gamer-vibes.com"><br><br>
+
+    <label id="number-label" for="number">How many hours do you game per week on average?</label>
+    <input id="number" type="number" min="0" max="168" required placeholder="e.g. 10, 25, 60"><br><br>
+
+    <label for="dropdown">What's your main gamer type?</label>
+    <select id="dropdown" required>
+      <option value="" disabled selected>Select your style...</option>
+      <option value="casual">Casual — just having fun</option>
+      <option value="hardcore">Hardcore — deep dives & long sessions</option>
+      <option value="competitive">Competitive — ranked, tournaments, grind</option>
+      <option value="mobile">Mobile / on-the-go gamer</option>
+      <option value="retro">Retro / nostalgia player</option>
+    </select><br><br>
+
+    <fieldset>
+      <legend>Main gaming platform (your primary device):</legend><br>
+      <label><input type="radio" name="platform" value="pc" required> PC / Gaming Rig</label><br>
+      <label><input type="radio" name="platform" value="console"> Console (PS5 / Xbox / Switch)</label><br>
+      <label><input type="radio" name="platform" value="mobile"> Mobile (Phone / Tablet)</label><br>
+      <label><input type="radio" name="platform" value="cloud"> Cloud Gaming (GeForce Now, xCloud, etc.)</label><br>
+      <label><input type="radio" name="platform" value="mixed"> Mixed — I use everything</label>
+    </fieldset><br><br>
+
+    <fieldset>
+      <legend>Which parts of your setup matter most to you? (select all that apply)</legend><br>
+      <label><input type="checkbox" name="gear" value="monitor"> High-refresh-rate / big monitor</label><br>
+      <label><input type="checkbox" name="gear" value="keyboard"> Mechanical keyboard (RGB preferred)</label><br>
+      <label><input type="checkbox" name="gear" value="mouse"> High-end gaming mouse</label><br>
+      <label><input type="checkbox" name="gear" value="headset"> Quality headset / surround sound</label><br>
+      <label><input type="checkbox" name="gear" value="chair"> Ergonomic gaming chair</label><br>
+      <label><input type="checkbox" name="gear" value="rgb"> Crazy RGB / lighting setup</label><br>
+      <label><input type="checkbox" name="gear" value="internet"> Super-fast internet connection</label><br>
+      <label><input type="checkbox" name="gear" value="other"> Something else (tell us below!)</label>
+    </fieldset><br><br>
+
+    <label for="comments" id="comments-label">Any comments, setup wishes, funny fails, or gear upgrades you're dreaming about?</label>
+    <textarea id="comments" name="comments" rows="5" placeholder="e.g. 'My chair squeaks like crazy' or 'Need that 240Hz OLED already...'"></textarea><br><br>
+
+    <button id="submit" type="submit">Submit My Setup & Help the Community!</button>
+
+  </form>
+
+</body>
+</html>
+
+** end of index.html **
+
